@@ -1,0 +1,232 @@
+***************************************************************/
+/*Styling the entire body*/
+/***************************************************************/
+
+html{
+	max-width: 100%;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+
+body{
+	max-width:100%; /* using max width solved the
+	horizontal scrolling problem. So I used it for
+	all other places where I have to specify width */
+	display: flex;
+	flex-direction: column;*/
+	align-items: center;
+	margin: 0;
+
+}
+
+/***************************************************************/
+/*Styling the header container*/
+/***************************************************************/
+
+.zone1{
+	max-width: 100%;
+	padding:50px;
+	margin: 0px;
+	background-color: #171515;
+}
+
+/*Styling the elements in the header*/
+/************************************/
+.zone1 li{
+	display: inline-flex; 
+	list-style: none;
+	flex-direction: column;
+	margin-right: 10px;
+	color: #FFFFFF;
+}
+
+
+.zone1 a{
+	color: #FFFFFF;
+}
+
+.zone1 a:link{
+	text-decoration: none;  /*This takes away the underline*/
+}
+
+
+/****************************************************************/
+/*Styling the boarder container */
+/****************************************************************/
+.zone2 .iframe{
+	height:520px;
+	max-width: 100%;
+	padding:150px;
+	margin: 0px;
+	background-size: cover;
+	background-position: center;
+	text-decoration-color: #ffffff;
+}
+
+/*Insight: adjust height and margin for desired effect in the border image*/
+
+/*Styling elements of boarder container*/
+/*****************************************/
+.zone2 h4{
+	text-align: center;
+	color: #FFFFFF;
+	padding-top: 40px;
+}
+
+/****************************************************************/
+/*Styling the main page container */
+/****************************************************************/
+.zone3{
+	max-width: 100%;
+	height: 350px;
+	padding:50px;
+	margin: 00px;
+	background-color: #EADDCA;
+}
+
+.image-wrapper{ /* Here, I realized that working on the image-wrapper
+	container takes care of image sizes. So I don't have to worry
+	about image sizes*/ 
+	
+	max-width: 100%;
+	margin: 4% 4% 1% 1%; 
+	display:grid;
+	grid-template-rows: 50% 50%; 
+	grid-gap: 10%;
+	align-content: center;
+	justify-content: center;
+	
+}
+
+
+.image-wrapper .second{
+	max-width: 100%;
+	margin: 4% 4% 1% 4%;
+	display:grid;
+	grid-template-columns: 65% 35%;
+	grid-gap: 10%;
+	align-content: center;
+	justify-content: center;
+
+}
+
+
+/*.image-wrapper .one{
+	text-align: center;
+	color: #ffffff;
+}*/
+
+/*.one a{
+	color: #ffffff;
+	text-decoration: none;
+}*/
+/* And lastly,
+figure out how (refer to your notes from the start-up land page
+project) how to make the page responsie to different viewing
+ environments. Review that video*/
+/****************************************************************/
+/*Styling the footer container */
+/****************************************************************/
+
+.zone4{
+	max-width: 100%;
+	padding: 50px;
+	margin:0px;
+	background-color: #171515;
+
+}
+
+.zone4 .footer-wrapper{
+	display: grid;
+	grid-template-rows: 80% 20%;
+	grid-gap: 45%;
+
+}
+
+/*.first{
+	display: grid;
+	grid-template-columns: 20% 20% 20% 20% auto;
+	align-items: center;
+	grid-gap: 4%;
+	max-height: 100%;
+
+}*/
+
+/*Great this one below is what got my images to be of the same
+size. 32x32*/
+/*.first .one img{  
+	width: auto;
+	height: 2em; 
+}*/
+
+.second .one{
+	text-align: center;
+	color: #FFFFFF;
+
+
+}
+/********************************************
+*                 Media Queries             *
+*********************************************/
+/*Below you write specifications for small screens. come here later 
+and specify for other devices like ipad, phone, etc. For now, I 
+think phone is fine but the height issue is the problem.*/
+@media screen and (max-width: 700px){
+
+	.image-wrapper{ 
+	max-width: 100%;
+	margin: 4% 5% 1% 0.5%; 
+	display:grid;
+	grid-template-columns: 30% 30%; 
+	grid-gap: 5%;
+	align-content: center;
+	justify-content: center;
+	
+}
+
+.image-wrapper img{
+	max-width: 100%;
+	height: 20vh; /* this is what gave me the square that I 
+	struggled so much to get. I had to set to some value of 
+	vh i.e the viewing height*/
+	object-fit: cover;
+	margin: 10px;
+	padding:10px;
+	background-color: #4169E1;
+
+}
+
+}
+
+/************************/
+/* For Mobile Phones    */
+/***********************/
+@media screen and (max-width: 400px){
+
+	.image-wrapper{ 
+	max-width: 100%;
+	margin: 4% 5% 1% 0.5%; 
+	display:grid;
+	grid-template-rows: 50% 50%; 
+	grid-gap: 5%;
+	align-content: center;
+	justify-content: center;
+	
+}
+
+.image-wrapper img{
+	max-width: 100%;
+	height: 20vh; /* this is what gave me the square that I 
+	struggled so much to get. I had to set to some value of 
+	vh i.e the viewing height*/
+	object-fit: cover;
+	margin: 10px;
+	padding:10px;
+	background-color: #4169E1;
+
+}
+
+}
