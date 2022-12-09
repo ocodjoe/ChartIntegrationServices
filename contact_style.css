@@ -196,7 +196,7 @@ think phone is fine but the height issue is the problem.*/
 	margin: 1% 1% 1% 5%;
 	display:grid;
 	grid-template-columns: 65% 35%;
-	grid-gap: 4%;
+	grid-gap: 3%;
 	align-content: center;
 	justify-content: center;
 
