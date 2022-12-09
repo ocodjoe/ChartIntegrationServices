@@ -190,6 +190,17 @@ think phone is fine but the height issue is the problem.*/
 		max-width: 100%;
 		height: auto;
 	}
+	
+	.image-wrapper .second{
+	max-width: 100%;
+	margin: 1% 1% 1% 5%;
+	display:grid;
+	grid-template-columns: 65% 35%;
+	grid-gap: 4%;
+	align-content: center;
+	justify-content: center;
+
+}
 
 }
 
