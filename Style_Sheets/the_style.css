@@ -9,10 +9,6 @@ html{
   	-o-background-size: cover;
   	background-size: cover;
 	
-	
-	@viewport{
-		width: device-width;
-	}
 }
 
 
@@ -62,7 +58,7 @@ body{
 /*Styling the boarder container */
 /****************************************************************/
 .zone2{
-	height:520px;
+	height:100vh;
 	max-width: 100%;
 	padding:150px;
 	margin: 0px;
