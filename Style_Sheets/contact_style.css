@@ -56,11 +56,12 @@ body{
 /****************************************************************/
 /*Styling the boarder container */
 /****************************************************************/
-.zone2 .iframe{
+.zone2{
 	height:520px;
 	max-width: 100%;
 	padding:150px;
 	margin: 0px;
+	background-image: url("../images/logo-png.png");
 	background-size: cover;
 	background-position: center;
 	text-decoration-color: #ffffff;
