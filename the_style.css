@@ -211,6 +211,7 @@ think phone is fine but the height issue is the problem.*/
 
 	@viewport{
 		width: device-width;
+		zoom: -25%;
 	}
 
 	body {
@@ -220,7 +221,7 @@ think phone is fine but the height issue is the problem.*/
 	.zone2 {
 		width: auto;
 		max-width: 100%;
-		height: 80vh;
+		height: auto;
 	}
 	
 	.image-wrapper .second{
