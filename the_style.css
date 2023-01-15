@@ -207,11 +207,10 @@ think phone is fine but the height issue is the problem.*/
 }
 
 /*This is for larger screens like dell moniter ish screens.*/
-@media screen and (max-width: 1366px){
+@media screen and (min-width: 1366px){
 
 	@viewport{
 		width: device-width;
-		zoom:1.0;
 	}
 
 	body {
