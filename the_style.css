@@ -221,7 +221,7 @@ think phone is fine but the height issue is the problem.*/
 		width: auto;
 		max-width: 100%;
 		height: auto;
-		zoom: -1.0;
+		zoom: -0.5;
 	}
 	
 	.image-wrapper .second{
