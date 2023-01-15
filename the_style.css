@@ -220,8 +220,7 @@ think phone is fine but the height issue is the problem.*/
 	.zone2 {
 		width: auto;
 		max-width: 100%;
-		height: auto;
-		zoom: -0.5;
+		height: 80vh;
 	}
 	
 	.image-wrapper .second{
